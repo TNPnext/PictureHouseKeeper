@@ -5,6 +5,8 @@
 现分享出源码，共同学习。
 
 
+ ![image](https://github.com/TangledHusky/PictureHouseKeeper/blob/master/Img/%E7%85%A7%E7%89%87%E7%AE%A1%E5%AE%B6.gif)
+
 APP功能：
 
 1、本地照片批量导入存储
