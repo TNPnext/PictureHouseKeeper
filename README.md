@@ -3,6 +3,7 @@
 《照片管家》
 一款业余时间写着玩的照片保护软件。
 现分享出源码，共同学习。
+建议真机测试哦
 
 
  ![image](https://github.com/TangledHusky/PictureHouseKeeper/blob/master/Img/%E7%85%A7%E7%89%87%E7%AE%A1%E5%AE%B6.gif)
