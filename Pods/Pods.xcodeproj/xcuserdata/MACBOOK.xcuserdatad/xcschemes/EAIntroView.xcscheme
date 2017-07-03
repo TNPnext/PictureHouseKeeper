@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0FB92BC85C2327DED7FA6BE5'
+               BlueprintIdentifier = 'E079843C9C79118289CFD9619070B0B8'
                BlueprintName = 'EAIntroView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libEAIntroView.a'>

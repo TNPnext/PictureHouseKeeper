@@ -16,7 +16,7 @@
             startingLineNumber = "587"
             endingLineNumber = "587"
             landmarkName = "-numberOfPhotosInPhotoBrowser:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,7 +64,7 @@
             startingLineNumber = "384"
             endingLineNumber = "384"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,7 +80,7 @@
             startingLineNumber = "300"
             endingLineNumber = "300"
             landmarkName = "-btnFinishClick"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,7 +96,7 @@
             startingLineNumber = "318"
             endingLineNumber = "318"
             landmarkName = "-btnFinishClick"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             startingLineNumber = "392"
             endingLineNumber = "392"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -128,7 +128,7 @@
             startingLineNumber = "408"
             endingLineNumber = "408"
             landmarkName = "-RefreshPicArry:isAdd:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,7 +144,7 @@
             startingLineNumber = "306"
             endingLineNumber = "306"
             landmarkName = "-btnFinishClick"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

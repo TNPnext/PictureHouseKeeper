@@ -31,7 +31,6 @@
 @property (nonatomic, strong) UIView			*longView;
 @property (nonatomic, strong) NSMutableArray	*tipArray;
 @property (nonatomic, assign) BOOL				orientationDidChange;
-@property (nonatomic, strong) NSTimer			*timer;
 
 @end
 
@@ -59,29 +58,20 @@
         toolbar.alpha = 0.97;
         [self addSubview:toolbar];
         
-		self.backImage = ({
-            UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
-            imgView.image        = ZFPlayerImage(@"ZFPlayer_brightness");
-			[self addSubview:imgView];
-			imgView;
-		});
+        self.backImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
+        self.backImage.image        = ZFPlayerImage(@"ZFPlayer_brightness");
+        [self addSubview:self.backImage];
 		
-		self.title = ({
-            UILabel *title      = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.bounds.size.width, 30)];
-            title.font          = [UIFont boldSystemFontOfSize:16];
-            title.textColor     = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
-            title.textAlignment = NSTextAlignmentCenter;
-            title.text          = @"亮度";
-			[self addSubview:title];
-			title;
-		});
+        self.title      = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.bounds.size.width, 30)];
+        self.title.font          = [UIFont boldSystemFontOfSize:16];
+        self.title.textColor     = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
+        self.title.textAlignment = NSTextAlignmentCenter;
+        self.title.text          = @"亮度";
+        [self addSubview:self.title];
 		
-		self.longView = ({
-            UIView *longView         = [[UIView alloc]initWithFrame:CGRectMake(13, 132, self.bounds.size.width - 26, 7)];
-            longView.backgroundColor = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
-			[self addSubview:longView];
-			longView;
-		});
+        self.longView         = [[UIView alloc]initWithFrame:CGRectMake(13, 132, self.bounds.size.width - 26, 7)];
+        self.longView.backgroundColor = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
+        [self addSubview:self.longView];
 		
 		[self createTips];
 		[self addNotification];
@@ -113,6 +103,7 @@
 }
 
 #pragma makr - 通知 KVO
+
 - (void)addNotification {
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self
@@ -141,13 +132,18 @@
 - (void)updateLayer:(NSNotification *)notify {
 	self.orientationDidChange = YES;
 	[self setNeedsLayout];
+    [self layoutIfNeeded];
 }
 
 #pragma mark - Methond
+
 - (void)appearSoundView {
 	if (self.alpha == 0.0) {
+        self.orientationDidChange = NO;
 		self.alpha = 1.0;
-		[self updateTimer];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self disAppearSoundView];
+        });
 	}
 }
 
@@ -156,41 +152,12 @@
 	if (self.alpha == 1.0) {
 		[UIView animateWithDuration:0.8 animations:^{
 			self.alpha = 0.0;
-		} completion:^(BOOL finished) {
-			
 		}];
 	}
 }
 
-#pragma mark - Timer Methond
-- (void)addtimer {
-	
-	if (self.timer) {
-		return;
-	}
-	
-	self.timer = [NSTimer timerWithTimeInterval:3
-										 target:self
-									   selector:@selector(disAppearSoundView)
-									   userInfo:nil
-										repeats:NO];
-	[[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
-}
-
-- (void)removeTimer {
-	
-	if (self.timer) {
-		[self.timer invalidate];
-		self.timer = nil;
-	}
-}
-
-- (void)updateTimer {
-	[self removeTimer];
-	[self addtimer];
-}
-
 #pragma mark - Update View
+
 - (void)updateLongView:(CGFloat)sound {
 	CGFloat stage = 1 / 15.0;
 	NSInteger level = sound / stage;
@@ -206,35 +173,10 @@
 	}
 }
 
-- (void)didMoveToSuperview {}
-
-- (void)willMoveToSuperview:(UIView *)newSuperview {
-	[self setNeedsLayout];
-}
-
 - (void)layoutSubviews {
 	[super layoutSubviews];
-	
-	if (self.orientationDidChange) {
-		[UIView animateWithDuration:0.25 animations:^{
-			if ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait
-				|| [UIDevice currentDevice].orientation == UIDeviceOrientationFaceUp) {
-				self.center = CGPointMake(ScreenWidth * 0.5, (ScreenHeight - 10) * 0.5);
-			} else {
-				self.center = CGPointMake(ScreenWidth * 0.5, ScreenHeight * 0.5);
-			}
-		} completion:^(BOOL finished) {
-			self.orientationDidChange = NO;
-		}];
-	} else {
-		if ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait) {
-			self.center = CGPointMake(ScreenWidth * 0.5, (ScreenHeight - 10) * 0.5);
-		} else {
-			self.center = CGPointMake(ScreenWidth * 0.5, ScreenHeight * 0.5);
-		}
-	}
-	
-	self.backImage.center = CGPointMake(155 * 0.5, 155 * 0.5);
+    self.backImage.center = CGPointMake(155 * 0.5, 155 * 0.5);
+    self.center = CGPointMake(ScreenWidth * 0.5, ScreenHeight * 0.5);
 }
 
 - (void)dealloc {
@@ -242,5 +184,14 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+- (void)setIsStatusBarHidden:(BOOL)isStatusBarHidden {
+    _isStatusBarHidden = isStatusBarHidden;
+    [[UIWindow zf_currentViewController] setNeedsStatusBarAppearanceUpdate];
+}
+
+- (void)setIsLandscape:(BOOL)isLandscape {
+    _isLandscape = isLandscape;
+    [[UIWindow zf_currentViewController] setNeedsStatusBarAppearanceUpdate];
+}
 
 @end

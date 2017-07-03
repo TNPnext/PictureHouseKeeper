@@ -15,7 +15,7 @@
 #define KMarginCenter 10
 
 
-@interface VideoViewController ()<UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,PictureCellDelegate>
+@interface VideoViewController ()<UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,PictureCellDelegate,ZFPlayerDelegate>
 
 @property (nonatomic,strong) UICollectionView  *mycollectionView;
 
@@ -347,19 +347,21 @@ static NSString * cellID = @"cellID";
 -(void)PictureCellDidPlayVideoWithpath:(NSString *)path{
     
     self.playerView = [[ZFPlayerView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [[UIApplication sharedApplication].keyWindow addSubview:self.playerView];
     
-    
-    self.playerView.videoURL = [NSURL fileURLWithPath:path];
+    ZFPlayerModel *playerModel = [[ZFPlayerModel alloc]init];
+    playerModel.fatherView = [UIApplication sharedApplication].keyWindow;
+    playerModel.videoURL = [NSURL fileURLWithPath:path];
+    playerModel.title = @"视频";
+    self.playerView.delegate = self;
+    ZFPlayerControlView *controlView = [[ZFPlayerControlView alloc] init];
+    [self.playerView playerControlView:controlView playerModel:playerModel];
     [self.playerView autoPlayTheVideo];
-    // Back button event
-    __weak typeof(self) weakSelf = self;
-    self.playerView.goBackBlock = ^{
-        //[weakSelf.navigationController popViewControllerAnimated:YES];
-        [weakSelf.playerView removeFromSuperview];
-    };
-
     
+}
+
+-(void)zf_playerBackAction{
+    self.playerView.removeFromSuperview;
+    self.playerView = nil;
 }
 
 

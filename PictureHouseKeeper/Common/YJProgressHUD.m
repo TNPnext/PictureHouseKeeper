@@ -26,7 +26,7 @@
 +(void)show:(NSString *)msg inView:(UIView *)view mode:(YJProgressMode *)myMode{
     //如果已有弹框，先消失
     if ([YJProgressHUD shareinstance].hud != nil) {
-        [[YJProgressHUD shareinstance].hud hideAnimated:YES];
+        [[YJProgressHUD shareinstance].hud hide:YES];
         [YJProgressHUD shareinstance].hud = nil;
     }
     
@@ -40,9 +40,9 @@
     [YJProgressHUD shareinstance].hud.color = [UIColor blackColor];
     [[YJProgressHUD shareinstance].hud setMargin:10];
     [[YJProgressHUD shareinstance].hud setRemoveFromSuperViewOnHide:YES];
-    [YJProgressHUD shareinstance].hud.detailsLabel.text = msg;
-    [YJProgressHUD shareinstance].hud.contentColor = [UIColor whiteColor];
-    [YJProgressHUD shareinstance].hud.detailsLabel.font = [UIFont systemFontOfSize:14];
+    [YJProgressHUD shareinstance].hud.detailsLabelText= msg;
+    [YJProgressHUD shareinstance].hud.color = [UIColor whiteColor];
+    [YJProgressHUD shareinstance].hud.detailsLabelFont = [UIFont systemFontOfSize:14];
     switch ((NSInteger)myMode) {
         case YJProgressModeOnlyText:
             [YJProgressHUD shareinstance].hud.mode = MBProgressHUDModeText;
@@ -72,14 +72,14 @@
 
 +(void)hide{
     if ([YJProgressHUD shareinstance].hud != nil) {
-        [[YJProgressHUD shareinstance].hud hideAnimated:YES];
+        [[YJProgressHUD shareinstance].hud hide:true];
     }
 }
 
 
 +(void)showMessage:(NSString *)msg inView:(UIView *)view{
     [self show:msg inView:view mode:YJProgressModeOnlyText];
-    [[YJProgressHUD shareinstance].hud hideAnimated:YES afterDelay:1.0];
+    [[YJProgressHUD shareinstance].hud hide:YES afterDelay:1.0];
 }
 
 
@@ -89,12 +89,12 @@
 
 +(void)showMessage:(NSString *)msg inView:(UIView *)view afterDelayTime:(NSInteger)delay{
     [self show:msg inView:view mode:YJProgressModeOnlyText];
-    [[YJProgressHUD shareinstance].hud hideAnimated:YES afterDelay:delay];
+    [[YJProgressHUD shareinstance].hud hide:YES afterDelay:delay];
 }
 
 +(void)showSuccess:(NSString *)msg inview:(UIView *)view{
     [self show:msg inView:view mode:YJProgressModeSuccess];
-    [[YJProgressHUD shareinstance].hud hideAnimated:YES afterDelay:1.0];
+    [[YJProgressHUD shareinstance].hud hide:YES afterDelay:1.0];
     
 }
 
@@ -106,7 +106,7 @@
 +(void)showMsgWithoutView:(NSString *)msg{
     UIWindow *view = [[UIApplication sharedApplication].windows lastObject];
     [self show:msg inView:view mode:YJProgressModeOnlyText];
-    [[YJProgressHUD shareinstance].hud hideAnimated:YES afterDelay:1.0];
+    [[YJProgressHUD shareinstance].hud hide:YES afterDelay:1.0];
     
 }
 

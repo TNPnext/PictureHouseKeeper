@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F900F5D4E2F2367B75080D01 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F6E767CEC3AB9C2A2FD9E3 /* libPods.a */; };
+		C7EA6396DB9ADB99D482BFDB /* libPods-PictureHouseKeeper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7749401E10BAD5BA35671E57 /* libPods-PictureHouseKeeper.a */; };
 		FA1404CE1D91265800EC590D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1404CD1D91265800EC590D /* AboutViewController.m */; };
 		FA1A33421D61C81600CB6AAD /* MainTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A33411D61C81600CB6AAD /* MainTabbarVC.m */; };
 		FA1A33481D61CA3400CB6AAD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A33471D61CA3400CB6AAD /* HomeViewController.m */; };
@@ -98,9 +98,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F6E767CEC3AB9C2A2FD9E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2771601ADB53E0BB6FB54F61 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B6FFF3A2621CF189687F7690 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5E80D22B2C0ED0FD896C0BEC /* Pods-PictureHouseKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureHouseKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PictureHouseKeeper/Pods-PictureHouseKeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		7749401E10BAD5BA35671E57 /* libPods-PictureHouseKeeper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PictureHouseKeeper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68637680C9AACFC51F3F80B /* Pods-PictureHouseKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureHouseKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PictureHouseKeeper/Pods-PictureHouseKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		FA1404CC1D91265800EC590D /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		FA1404CD1D91265800EC590D /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		FA1A33401D61C81600CB6AAD /* MainTabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabbarVC.h; path = PictureHouseKeeper/MainTabbarVC.h; sourceTree = SOURCE_ROOT; };
@@ -253,8 +253,8 @@
 				FAB974D81D6EEB48003F5C44 /* MobileCoreServices.framework in Frameworks */,
 				FA83384D1D7678AC00FA2C9E /* TencentOpenAPI.framework in Frameworks */,
 				FA83384B1D7678AC00FA2C9E /* libWeiboSDK.a in Frameworks */,
-				F900F5D4E2F2367B75080D01 /* libPods.a in Frameworks */,
 				FA83384F1D7678AC00FA2C9E /* libWeChatSDK.a in Frameworks */,
+				C7EA6396DB9ADB99D482BFDB /* libPods-PictureHouseKeeper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +275,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		701E57706E4F92AF187E1653 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E80D22B2C0ED0FD896C0BEC /* Pods-PictureHouseKeeper.debug.xcconfig */,
+				B68637680C9AACFC51F3F80B /* Pods-PictureHouseKeeper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BA05E94F5A7D23513C60C70B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,18 +302,9 @@
 				FA8338531D76792C00FA2C9E /* SystemConfiguration.framework */,
 				FA8338511D76792300FA2C9E /* Security.framework */,
 				FAB974D71D6EEB48003F5C44 /* MobileCoreServices.framework */,
-				01F6E767CEC3AB9C2A2FD9E3 /* libPods.a */,
+				7749401E10BAD5BA35671E57 /* libPods-PictureHouseKeeper.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EB6FFB13E8646D1CC099D0B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B6FFF3A2621CF189687F7690 /* Pods.debug.xcconfig */,
-				2771601ADB53E0BB6FB54F61 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		FA1A33431D61C93B00CB6AAD /* Main */ = {
@@ -601,8 +601,8 @@
 				FACC87651D5C748D002EEF25 /* PictureHouseKeeperTests */,
 				FACC87701D5C748D002EEF25 /* PictureHouseKeeperUITests */,
 				FACC874A1D5C748D002EEF25 /* Products */,
-				EB6FFB13E8646D1CC099D0B5 /* Pods */,
 				BA05E94F5A7D23513C60C70B /* Frameworks */,
+				701E57706E4F92AF187E1653 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -676,12 +676,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACC87761D5C748D002EEF25 /* Build configuration list for PBXNativeTarget "PictureHouseKeeper" */;
 			buildPhases = (
-				A536D49E9735C9B86CB99B8B /* Check Pods Manifest.lock */,
+				82A37093D1F04FE760E9454B /* [CP] Check Pods Manifest.lock */,
 				FACC87451D5C748D002EEF25 /* Sources */,
 				FACC87461D5C748D002EEF25 /* Frameworks */,
 				FACC87471D5C748D002EEF25 /* Resources */,
-				1EC1522323C84E8AD223638F /* Embed Pods Frameworks */,
-				5EBAB4AB46E9B482ACC02958 /* Copy Pods Resources */,
+				9A9A01AC600699E893F8D62C /* [CP] Embed Pods Frameworks */,
+				17834574F2A5813E96917F8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -739,6 +739,7 @@
 				TargetAttributes = {
 					FACC87481D5C748D002EEF25 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G7KRDXK4J7;
 					};
 					FACC87611D5C748D002EEF25 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -806,49 +807,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EC1522323C84E8AD223638F /* Embed Pods Frameworks */ = {
+		17834574F2A5813E96917F8A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictureHouseKeeper/Pods-PictureHouseKeeper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5EBAB4AB46E9B482ACC02958 /* Copy Pods Resources */ = {
+		82A37093D1F04FE760E9454B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A536D49E9735C9B86CB99B8B /* Check Pods Manifest.lock */ = {
+		9A9A01AC600699E893F8D62C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictureHouseKeeper/Pods-PictureHouseKeeper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1036,10 +1037,11 @@
 		};
 		FACC87771D5C748D002EEF25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6FFF3A2621CF189687F7690 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 5E80D22B2C0ED0FD896C0BEC /* Pods-PictureHouseKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = G7KRDXK4J7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1061,10 +1063,11 @@
 		};
 		FACC87781D5C748D002EEF25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2771601ADB53E0BB6FB54F61 /* Pods.release.xcconfig */;
+			baseConfigurationReference = B68637680C9AACFC51F3F80B /* Pods-PictureHouseKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = G7KRDXK4J7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
