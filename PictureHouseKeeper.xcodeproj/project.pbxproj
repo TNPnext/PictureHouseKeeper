@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C7EA6396DB9ADB99D482BFDB /* libPods-PictureHouseKeeper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7749401E10BAD5BA35671E57 /* libPods-PictureHouseKeeper.a */; };
 		FA1404CE1D91265800EC590D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1404CD1D91265800EC590D /* AboutViewController.m */; };
-		FA1A33421D61C81600CB6AAD /* MainTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A33411D61C81600CB6AAD /* MainTabbarVC.m */; };
 		FA1A33481D61CA3400CB6AAD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A33471D61CA3400CB6AAD /* HomeViewController.m */; };
 		FA1A334B1D61CA3F00CB6AAD /* SeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A334A1D61CA3F00CB6AAD /* SeetingViewController.m */; };
 		FA1A33551D62B03000CB6AAD /* PublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A33541D62B03000CB6AAD /* PublicMethod.m */; };
@@ -18,6 +17,8 @@
 		FA2BCE461D6ACCA500ADD79C /* settingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCE441D6ACCA500ADD79C /* settingCell.m */; };
 		FA2BCE4A1D6AD20600ADD79C /* settingSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCE491D6AD20600ADD79C /* settingSwitchCell.m */; };
 		FA374F5A1D66FB37009A410C /* YJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FA374F591D66FB37009A410C /* YJProgressHUD.m */; };
+		FA3F16D620FB382400BE6603 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F16D520FB382400BE6603 /* AppDelegate.m */; };
+		FA3F16D920FB384200BE6603 /* MainTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F16D820FB384200BE6603 /* MainTabbarVC.m */; };
 		FA83384B1D7678AC00FA2C9E /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8338381D7678AC00FA2C9E /* libWeiboSDK.a */; };
 		FA83384C1D7678AC00FA2C9E /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA8338411D7678AC00FA2C9E /* WeiboSDK.bundle */; };
 		FA83384D1D7678AC00FA2C9E /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8338451D7678AC00FA2C9E /* TencentOpenAPI.framework */; };
@@ -68,7 +69,6 @@
 		FAB974D81D6EEB48003F5C44 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB974D71D6EEB48003F5C44 /* MobileCoreServices.framework */; };
 		FAC323951D644FF7007683F2 /* CommonGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC323941D644FF7007683F2 /* CommonGlobal.m */; };
 		FACC874E1D5C748D002EEF25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC874D1D5C748D002EEF25 /* main.m */; };
-		FACC87511D5C748D002EEF25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC87501D5C748D002EEF25 /* AppDelegate.m */; };
 		FACC87571D5C748D002EEF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACC87551D5C748D002EEF25 /* Main.storyboard */; };
 		FACC87591D5C748D002EEF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACC87581D5C748D002EEF25 /* Assets.xcassets */; };
 		FACC875C1D5C748D002EEF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACC875A1D5C748D002EEF25 /* LaunchScreen.storyboard */; };
@@ -103,8 +103,6 @@
 		B68637680C9AACFC51F3F80B /* Pods-PictureHouseKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureHouseKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PictureHouseKeeper/Pods-PictureHouseKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		FA1404CC1D91265800EC590D /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		FA1404CD1D91265800EC590D /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		FA1A33401D61C81600CB6AAD /* MainTabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabbarVC.h; path = PictureHouseKeeper/MainTabbarVC.h; sourceTree = SOURCE_ROOT; };
-		FA1A33411D61C81600CB6AAD /* MainTabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabbarVC.m; path = PictureHouseKeeper/MainTabbarVC.m; sourceTree = SOURCE_ROOT; };
 		FA1A33461D61CA3400CB6AAD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FA1A33471D61CA3400CB6AAD /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FA1A33491D61CA3F00CB6AAD /* SeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeetingViewController.h; sourceTree = "<group>"; };
@@ -122,6 +120,10 @@
 		FA2BCE491D6AD20600ADD79C /* settingSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingSwitchCell.m; sourceTree = "<group>"; };
 		FA374F581D66FB37009A410C /* YJProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJProgressHUD.h; sourceTree = "<group>"; };
 		FA374F591D66FB37009A410C /* YJProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJProgressHUD.m; sourceTree = "<group>"; };
+		FA3F16D420FB382400BE6603 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA3F16D520FB382400BE6603 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA3F16D720FB384200BE6603 /* MainTabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbarVC.h; sourceTree = "<group>"; };
+		FA3F16D820FB384200BE6603 /* MainTabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabbarVC.m; sourceTree = "<group>"; };
 		FA8338381D7678AC00FA2C9E /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		FA8338391D7678AC00FA2C9E /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
 		FA83383A1D7678AC00FA2C9E /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
@@ -209,8 +211,6 @@
 		FAC323941D644FF7007683F2 /* CommonGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonGlobal.m; sourceTree = "<group>"; };
 		FACC87491D5C748D002EEF25 /* PictureHouseKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureHouseKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACC874D1D5C748D002EEF25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FACC874F1D5C748D002EEF25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		FACC87501D5C748D002EEF25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		FACC87561D5C748D002EEF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FACC87581D5C748D002EEF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FACC875B1D5C748D002EEF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -310,11 +310,11 @@
 		FA1A33431D61C93B00CB6AAD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FACC874F1D5C748D002EEF25 /* AppDelegate.h */,
-				FACC87501D5C748D002EEF25 /* AppDelegate.m */,
+				FA3F16D420FB382400BE6603 /* AppDelegate.h */,
+				FA3F16D520FB382400BE6603 /* AppDelegate.m */,
 				FACC87551D5C748D002EEF25 /* Main.storyboard */,
-				FA1A33401D61C81600CB6AAD /* MainTabbarVC.h */,
-				FA1A33411D61C81600CB6AAD /* MainTabbarVC.m */,
+				FA3F16D720FB384200BE6603 /* MainTabbarVC.h */,
+				FA3F16D820FB384200BE6603 /* MainTabbarVC.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -868,24 +868,24 @@
 				FAB5E9E01D6C135D00B1E46A /* PCLockLabel.m in Sources */,
 				FADEA3831D63431E0079261C /* UIView+Extension.m in Sources */,
 				FAB5E9DD1D6C135D00B1E46A /* PCCircleViewConst.m in Sources */,
-				FACC87511D5C748D002EEF25 /* AppDelegate.m in Sources */,
 				FAC323951D644FF7007683F2 /* CommonGlobal.m in Sources */,
 				FA1A335E1D62C6DB00CB6AAD /* FolderCell.m in Sources */,
 				FA8338871D76815C00FA2C9E /* XMShareQQUtil.m in Sources */,
 				FA1A334B1D61CA3F00CB6AAD /* SeetingViewController.m in Sources */,
 				FAF601CF1D86A21C0037CE7F /* NewFearureViewController.m in Sources */,
 				FACC874E1D5C748D002EEF25 /* main.m in Sources */,
-				FA1A33421D61C81600CB6AAD /* MainTabbarVC.m in Sources */,
 				FA83388B1D76815C00FA2C9E /* XMShareView.m in Sources */,
 				FA2BCE461D6ACCA500ADD79C /* settingCell.m in Sources */,
 				FA83388A1D76815C00FA2C9E /* XMShareWeiboUtil.m in Sources */,
 				FAB5E9D91D6C135D00B1E46A /* GestureViewController.m in Sources */,
+				FA3F16D620FB382400BE6603 /* AppDelegate.m in Sources */,
 				FAB5E9DC1D6C135D00B1E46A /* PCCircleView.m in Sources */,
 				FAB974D61D6EE72C003F5C44 /* VideoViewController.m in Sources */,
 				FA1A33551D62B03000CB6AAD /* PublicMethod.m in Sources */,
 				FA1404CE1D91265800EC590D /* AboutViewController.m in Sources */,
 				FAB5E9DB1D6C135D00B1E46A /* PCCircle.m in Sources */,
 				FA1A33481D61CA3400CB6AAD /* HomeViewController.m in Sources */,
+				FA3F16D920FB384200BE6603 /* MainTabbarVC.m in Sources */,
 				FAB5E9DA1D6C135D00B1E46A /* ViewController.m in Sources */,
 				FAA2CFA11D892DCB00315A33 /* TouchIDViewController.m in Sources */,
 				FAB5E9DE1D6C135D00B1E46A /* CALayer+Anim.m in Sources */,
