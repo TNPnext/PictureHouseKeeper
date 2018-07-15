@@ -21,10 +21,12 @@
 #import <TencentOpenAPI/QQApiInterface.h>
 #import "WeiboSDK.h"
 
-@interface AppDelegate ()<WeiboSDKDelegate, QQApiInterfaceDelegate>
-
-@end
 static NSString * const newFearureId = @"newFearureId";
+
+@interface AppDelegate ()<WeiboSDKDelegate, QQApiInterfaceDelegate>
+//控制只有进入后台返回后，才显示需要密码进入
+@property (nonatomic,assign) BOOL  showPWDEnter;
+@end
 
 @implementation AppDelegate
 
@@ -47,7 +49,7 @@ static NSString * const newFearureId = @"newFearureId";
 
     
     [CommonGlobal shareinstance].isShowtoSettingGesture = NO;
-   
+    _showPWDEnter = YES;
     
     [self init3rdParty];
     
@@ -80,11 +82,13 @@ static NSString * const newFearureId = @"newFearureId";
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-
+    NSLog(@"--applicationWillResignActive--");
+    _showPWDEnter = NO;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-
+    NSLog(@"--applicationDidEnterBackground--");
+    _showPWDEnter = YES;
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -92,6 +96,11 @@ static NSString * const newFearureId = @"newFearureId";
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSLog(@"--applicationDidBecomeActive--");
+    if (!_showPWDEnter){
+        _showPWDEnter = YES;
+        return;
+    }
 //    优先级：touchID－》手势密码－》数字密码
 //    开启touchID
     if ([[PublicMethod getValue:TouchIDPwdSettingKey] isEqual:@"ON"]) {

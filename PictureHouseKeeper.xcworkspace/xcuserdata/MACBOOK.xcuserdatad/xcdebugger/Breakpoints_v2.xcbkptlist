@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "495437965.293665"
+            timestampString = "553315374.8019069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "587"
-            endingLineNumber = "587"
+            startingLineNumber = "591"
+            endingLineNumber = "591"
             landmarkName = "-numberOfPhotosInPhotoBrowser:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "495437965.293665"
+            timestampString = "553315374.8019871"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "583"
-            endingLineNumber = "583"
-            landmarkName = "@implementation HomeDetailViewController"
+            startingLineNumber = "587"
+            endingLineNumber = "587"
+            landmarkName = "HomeDetailViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "493565772.43645"
+            timestampString = "553315374.802089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "384"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "493565772.43645"
+            timestampString = "553315374.802143"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "300"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "493565772.43645"
+            timestampString = "553315374.802193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "318"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "493565772.43645"
+            timestampString = "553315374.802243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "392"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "493565772.43645"
+            timestampString = "553315374.802292"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "408"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PictureHouseKeeper/Home/HomeDetailViewController.m"
-            timestampString = "493565772.43645"
+            timestampString = "553315374.80234"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "306"
@@ -171,6 +171,22 @@
             endingLineNumber = "349"
             landmarkName = "-gestureEndByTypeLoginWithGesture:length:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PictureHouseKeeper/AppDelegate.m"
+            timestampString = "553315374.802487"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-applicationDidBecomeActive:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

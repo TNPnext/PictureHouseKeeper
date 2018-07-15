@@ -560,6 +560,10 @@ static NSString * const cellID = @"pictureCell";
         }];
     }
     
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        [PHAssetChangeRequest deleteAssets:assets];
+    } completionHandler:nil];
+    
     [YJProgressHUD hide];
     [picker dismissViewControllerAnimated:YES completion:^{
         [self getFolderArry];
